@@ -1,0 +1,17 @@
+{
+    "name": "angehende",
+    "version": "1.0.0",
+    "description": "Angehende Webdesignerin - My first Portfolio",
+    "main": "index.js",
+    "homepage": "https://malykdim.github.io/Angehende-Webdesignerin",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/bewerbung.css --recursive",
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "Albena Kostova",
+    "license": "ISC",
+    "dependencies": {
+        "gh-pages": "^2.1.1",
+        "node-sass": "^4.13.0"
+    }
+}
