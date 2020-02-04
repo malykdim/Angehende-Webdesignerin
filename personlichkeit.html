@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angehende Webdesignerin</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Nothing+You+Could+Do" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/bewerbung.css" media="all">
+<link rel="stylesheet" href="css/tools.css" />
+</head>
+<body>
+    <div class="mobileNav">
+        <a class="mlink index" href="index.html">Startseite</a>
+		<a class="mlink kompetenzen" href="kompetenzen.html">Kompetenzen</a>
+		<a class="mlink erfahrung"  href="erfahrung.html">Erfahrung</a>
+		<a class="mlink personlichkeit"  href="personlichkeit.html">Persönlichkeit</a>
+		<a class="mlink kontakt" href="kontakt.html">Kontakt</a>
+        <div style="clear: both;"></div>
+      </div>
+<div class="box">
+<div class="header">
+<h2 class="center color mrg9 headerTitle">Bewerbung für eine Stelle</h2>
+<p class="title center">als auszubildende Mediengestalterin / Webdesignerin</p>
+</div> <!-- header -->
+<div class="content">
+<div class="left">
+	<div class="card ">
+		<img src="images/albena.jpg" alt="Albena Kostova" style="width:100%">
+		<h2 class=" color" style="">Albena Kostova</h2>
+		<p class="title">Angehende Webdesignerin</p><br>
+        <div class="social mrg0 bgLight" style="background-color: rgb(237, 142, 94);">     
+          <a href="https://www.linkedin.com/in/albenakostova" target="_blank"><i class="fa fa-linkedin"></i></a>
+		  <a href="https://www.xing.com/profile/Albena_Kostova/cv" target="_blank"><i class="fa fa-xing"></i></a>
+		</div>							
+	</div><!-- card -->
+</div> <!-- left -->
+<div class="middle mrg0">
+<div class="contentHolder">
+<p class="fontF">
+<span style="font-weight: bold;">Persönlichkeit:</span><br><br>
+Als kreativer Geist habe ich großen Spaß Ideen und Konzepte zu entwickeln und umzusetzen.
+Ästhetik und Stil spielen eine große Rolle in meinem Leben. Dies spiegelt sich in allen meiner Projekte wieder.<br><br>
+Ich besitze eine selbstständige Arbeitsweise und Organisationsfähigkeit.
+Eine konstruktive Kritik empfinde ich als Basis für eine Weiterentwicklung.
+Kommunikation, Teamfähigkeit, Belastbarkeit - das bin ich!<br><br>
+Mit meinem fröhlichen Charakter und offener Art kann ich zum positiven und produktivem Arbeitsklima beitragen.
+</p>
+<p class="fontF"></p>
+<p class="fontF">
+<span style="font-weight: bold;">Sprachkenntnisse: </span><br><br>
+Deutsch (B2), Englisch (C1), Russisch (B2), Bulgarisch (Muttersprache).
+</p>
+
+</div> <!-- contentHolder -->
+</div> <!-- middle -->
+<div class="right">
+<div class="nav" id="navigation">
+    <a class="link index" href="index.html" title="Startseite"><i style="" class="fa icon">&#xf015;</i> Startseite</a>
+    <a class="link kompetenzen" href="kompetenzen.html" title="Kompetenzen"><i class="fa fa-lightbulb-o icon" style="font-size:24px"></i> Kompetenzen</a>
+    <a class="link erfahrung" href="erfahrung.html" title="Erfahrung"><i class="fa fa-paperclip icon" style="font-size:24px"></i> Erfahrung</a>
+    <a class="link personlichkeit" href="personlichkeit.html" title="Persönlichkeit"><i class="fa fa-user-o icon" style="font-size:24px"></i> Persönlichkeit</a>
+    <a class="link kontakt" href="kontakt.html" title="Kontakt"><i style="" class="fa icon">&#xf1d9;</i> Kontakt</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+</div> <!-- nav -->
+</div> <!-- right -->
+</div> <!-- content -->
+<div class="footer">
+<p class="title center mrg15auto">Ich bedanke mich für Ihre Aufmerksamkeit!</p>
+</div> <!-- footer -->
+</div> <!-- box -->
+<script src="js/global.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4764158-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118285502-1');
+</script>
+<script>
+    var _current = window.location.href.split('.')[2];
+    var currentPage = _current.split('/')[1];
+	if (!currentPage) {
+		currentPage = 'index';
+	}
+    document.getElementsByClassName(currentPage)[0].classList.add('active');
+    document.getElementsByClassName(currentPage)[1].classList.add('active');
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de">
+<head>
+  <title>Holzschuhe GmbH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amarante|Ceviche+One|Quintessential|Exo+2" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="holzschuhe.css">
+</head>
+
+<body>
+  <header class="header">  
+    <div class="row">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      <nav class="col-5 col-m-3 nav">
+				<a href="index.html">Startseite</a>
+				<div class="dropdown">
+					<span class="dropbtn">Unsere Produkte <i class="fa fa-caret-down"></i></span>
+					<div class="dropdown-content">
+						<a href="javascript:void(0);">der Praktische</a>
+						<a href="javascript:void(0);">der Robuste</a>
+						<a href="javascript:void(0);">der Traditionelle</a>
+						<a href="javascript:void(0);">der Luxuriöse</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<span class="dropbtn">Unsere Firma <i class="fa fa-caret-down"></i></span>
+					<div class="dropdown-content">
+						<a href="javascript:void(0);">Geschichte</a>
+						<a href="javascript:void(0);">Team</a>
+						<a href="javascript:void(0);">Karriere/Jobs</a>
+					</div> 
+				</div>
+      </nav>	  
+      <div class="col-2 col-m-7 logo">
+			<a href="index.html" alt="Home"><img id="logo" src="images/Holzschuh-GmbH_Logobeispiel.png" alt="logo" style="width: 200px; height: 150px;"></a>
+	  </div>	  
+      <div class="col-5 col-m-12 search">
+			<span class="search-button">Suche</span>
+			<input id="search" type="text" name="search" placeholder="Suche...">	    
+	  </div>		
+	</div>
+  </header>
+  
+  <div class="content">
+    <div class="row" style="margin-top: 25px;">
+	  <div class="col-12 col-m-12">
+	    <h2>Kontakt</h2>
+		<p style="text-align: center; font-weight: bold;">Besuchen Sie uns oder hinterlassen Sie uns eine Nachricht:</p>
+      </div>
+	</div> 
+    <div class="row" style="margin-top: 25px;">	
+	  <div class="col-4 col-m-6 column">
+	    <address style="text-align: center;">
+		<i class="fas fa-map-marker"></i><br><br>
+		Holzschuh GmbH <br><br>
+		Ehm-Welk-Straße 30 <br>
+		03222 Spreewald <br>
+		<br>
+		<i class="fas fa-phone"></i><br><br>
+		03546 - 342 19 84 55
+		<br><br>
+		<i class="fas fa-fax"></i><br><br>
+        03546 - 342 19 84 59
+        <br><br>
+		<i class="fas fa-at"></i><br><br>
+        info@holzschuhe.de
+		</address>
+	  </div>
+	  <div class="col-4 col-m-6 column">
+	    <div id="map" style="width:100%;height:500px"></div>
+	  </div>
+	  <div class="col-4 col-m-12 column">
+	    <form action="/action_page.php">		  
+		  <input type="text" id="name" name="name" placeholder="Vorname Familienname"><br>		  
+		  <input type="email" id="email" name="email" placeholder="Ihre E-Mail Adresse"><br>		  
+		  <textarea id="subject" name="subject" placeholder="Ihre Nachricht bitte hier hinterlassen..." style="height:300px"></textarea>
+		  <input type="submit" value="Schicken">
+		</form>
+	  </div>
+	</div>
+  </div> 
+
+  
+  <div class="footer">
+		<div style="float: right; margin-top: 15px;">
+			<a href="impressum.html" alt="impressum" class="button">Impressum</a>
+			<a href="kontakt.html" alt="contact" class="button">Kontakt</a>
+		</div>
+		<p style="color: #ffbf00">Copyright &copy; Holzschuh GmbH - 2004</p>		
+	</div>
+  
+<script>
+function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+				x.className += " responsive";
+		} else {
+				x.className = "topnav";
+		}
+}
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.8685087,13.9665479);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcwrfyIPhb5tX-sU2f3oxOq6cRUc1HXSo&callback=myMap"></script>	
+</body>
+</html>
